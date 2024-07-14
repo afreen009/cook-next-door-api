@@ -189,7 +189,8 @@ export async function seed(knex) {
     },
     {
       food_id: 5,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1504544750208-dc0358e63f7f?q=80&w=1634&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 1,
       menu_name: "Tacos",
       rating: 4.7,
@@ -199,7 +200,8 @@ export async function seed(knex) {
     },
     {
       food_id: 6,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 1,
       menu_name: "Biryani",
       rating: 4.8,
@@ -209,7 +211,8 @@ export async function seed(knex) {
     },
     {
       food_id: 7,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1663853051660-91bd9b822799?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8RmFsYWZlbHxlbnwwfHwwfHx8MA%3D%3D",
       cook_id: 1,
       menu_name: "Falafel",
       rating: 4.2,
@@ -219,17 +222,19 @@ export async function seed(knex) {
     },
     {
       food_id: 8,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1676471970358-1cff04452e7b?q=80&w=2980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 2,
-      menu_name: "Pasta Primavera",
+      menu_name: "Egg Avocado Toast",
       rating: 4.3,
       price: "$30",
       description:
-        "Pasta Primavera is a dish that consists of pasta and fresh vegetables.",
+        "Egg Avocado Toast is a dish that consists of pasta and fresh vegetables.",
     },
     {
       food_id: 9,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1633424411431-5eb8d0e96488?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnYW4lMjBidXJnZXJzfGVufDB8fDB8fHww",
       cook_id: 2,
       menu_name: "Veggie Burger",
       rating: 4.5,
@@ -238,7 +243,8 @@ export async function seed(knex) {
     },
     {
       food_id: 10,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1516100882582-96c3a05fe590?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 3,
       menu_name: "Pasta Primavera",
       rating: 4.3,
@@ -248,7 +254,8 @@ export async function seed(knex) {
     },
     {
       food_id: 11,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1522036664039-3c5756c2b459?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 3,
       menu_name: "Veggie Burger",
       rating: 4.5,
@@ -257,7 +264,8 @@ export async function seed(knex) {
     },
     {
       food_id: 12,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 4,
       menu_name: "Chicken Curry",
       rating: 4.8,
@@ -267,7 +275,8 @@ export async function seed(knex) {
     },
     {
       food_id: 13,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1573821663912-6df460f9c684?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 5,
       menu_name: "Margherita Pizza",
       rating: 4.7,
@@ -277,7 +286,8 @@ export async function seed(knex) {
     },
     {
       food_id: 14,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1570877215023-229052e10c34?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 6,
       menu_name: "Sushi Platter",
       rating: 4.9,
@@ -287,7 +297,8 @@ export async function seed(knex) {
     },
     {
       food_id: 15,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1681072530653-db8fe2538631?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 7,
       menu_name: "Falafel Wrap",
       rating: 4.4,
@@ -297,7 +308,8 @@ export async function seed(knex) {
     },
     {
       food_id: 16,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1661730314652-911662c0d86e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 8,
       menu_name: "Beef Tacos",
       rating: 4.6,
@@ -307,7 +319,8 @@ export async function seed(knex) {
     },
     {
       food_id: 17,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1481931098730-318b6f776db0?q=80&w=1590&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 9,
       menu_name: "Pasta Carbonara",
       rating: 4.5,
@@ -317,7 +330,8 @@ export async function seed(knex) {
     },
     {
       food_id: 18,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1700089483464-4f76cc3d360b?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 10,
       menu_name: "Caesar Salad",
       rating: 4.3,
@@ -327,7 +341,8 @@ export async function seed(knex) {
     },
     {
       food_id: 19,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1661610605309-77feabcc8772?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 11,
       menu_name: "Pad Thai",
       rating: 4.7,
@@ -337,7 +352,8 @@ export async function seed(knex) {
     },
     {
       food_id: 20,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1595777216528-071e0127ccbf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 12,
       menu_name: "Lamb Kebabs",
       rating: 4.6,
@@ -347,7 +363,8 @@ export async function seed(knex) {
     },
     {
       food_id: 21,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1666662657930-7c3c39a12062?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 13,
       menu_name: "Chocolate Cake",
       rating: 4.9,
@@ -357,7 +374,8 @@ export async function seed(knex) {
     },
     {
       food_id: 22,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1625938393850-10f1f23de467?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 4,
       menu_name: "Grilled Salmon",
       rating: 4.8,
@@ -367,7 +385,8 @@ export async function seed(knex) {
     },
     {
       food_id: 23,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1668724775591-f50dd8ed65a5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 4,
       menu_name: "Beef Stroganoff",
       rating: 4.7,
@@ -377,7 +396,8 @@ export async function seed(knex) {
     },
     {
       food_id: 24,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1667899298118-24a6cad326ec?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 4,
       menu_name: "Cheesecake",
       rating: 4.9,
@@ -387,7 +407,8 @@ export async function seed(knex) {
     },
     {
       food_id: 25,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1690561082636-06237f98bfab?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 5,
       menu_name: "Greek Salad",
       rating: 4.5,
@@ -397,7 +418,8 @@ export async function seed(knex) {
     },
     {
       food_id: 26,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1642497394078-4794e837019c?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 5,
       menu_name: "Lentil Soup",
       rating: 4.6,
@@ -407,7 +429,8 @@ export async function seed(knex) {
     },
     {
       food_id: 27,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1592119747782-d8c12c2ea267?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 5,
       menu_name: "Stuffed Peppers",
       rating: 4.7,
@@ -417,7 +440,8 @@ export async function seed(knex) {
     },
     {
       food_id: 28,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 6,
       menu_name: "Chicken Fajitas",
       rating: 4.8,
@@ -427,7 +451,8 @@ export async function seed(knex) {
     },
     {
       food_id: 29,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1542326237-94b1c5a538d4?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 6,
       menu_name: "Tiramisu",
       rating: 4.9,
@@ -437,7 +462,8 @@ export async function seed(knex) {
     },
     {
       food_id: 30,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1671559021023-3da68c12aeed?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 6,
       menu_name: "Lasagna",
       rating: 4.7,
@@ -447,7 +473,8 @@ export async function seed(knex) {
     },
     {
       food_id: 31,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1694141251195-2cf78a758fda?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 7,
       menu_name: "Biryani",
       rating: 4.8,
@@ -457,7 +484,8 @@ export async function seed(knex) {
     },
     {
       food_id: 32,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1546039907-7fa05f864c02?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 7,
       menu_name: "Hummus Platter",
       rating: 4.6,
@@ -467,7 +495,8 @@ export async function seed(knex) {
     },
     {
       food_id: 33,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1699728088600-6d684acbeada?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 7,
       menu_name: "Lamb Shawarma",
       rating: 4.7,
@@ -477,7 +506,8 @@ export async function seed(knex) {
     },
     {
       food_id: 34,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1701197159530-80a188e34dfc?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 8,
       menu_name: "Quiche Lorraine",
       rating: 4.6,
@@ -487,7 +517,8 @@ export async function seed(knex) {
     },
     {
       food_id: 35,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1476124369491-e7addf5db371?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 8,
       menu_name: "Coq au Vin",
       rating: 4.9,
@@ -497,7 +528,8 @@ export async function seed(knex) {
     },
     {
       food_id: 36,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1713635953474-b74990274152?q=80&w=1484&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 8,
       menu_name: "Ratatouille",
       rating: 4.7,
@@ -507,7 +539,8 @@ export async function seed(knex) {
     },
     {
       food_id: 37,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1666920344211-88611229ce09?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 9,
       menu_name: "Tempura",
       rating: 4.8,
@@ -517,7 +550,8 @@ export async function seed(knex) {
     },
     {
       food_id: 38,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1526318896980-cf78c088247c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 9,
       menu_name: "Ramen",
       rating: 4.7,
@@ -527,7 +561,8 @@ export async function seed(knex) {
     },
     {
       food_id: 39,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 9,
       menu_name: "Teriyaki Chicken",
       rating: 4.6,
@@ -537,7 +572,8 @@ export async function seed(knex) {
     },
     {
       food_id: 40,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1602406372206-4d58edc0b733?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 10,
       menu_name: "Sauerbraten",
       rating: 4.7,
@@ -547,7 +583,8 @@ export async function seed(knex) {
     },
     {
       food_id: 41,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1576618148423-df549bcb6972?q=80&w=1498&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 10,
       menu_name: "Bratwurst",
       rating: 4.6,
@@ -557,7 +594,8 @@ export async function seed(knex) {
     },
     {
       food_id: 42,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?q=80&w=1606&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 10,
       menu_name: "Black Forest Cake",
       rating: 4.9,
@@ -567,7 +605,8 @@ export async function seed(knex) {
     },
     {
       food_id: 43,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1667807522175-bc48128e951e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 11,
       menu_name: "Paella",
       rating: 4.8,
@@ -577,7 +616,8 @@ export async function seed(knex) {
     },
     {
       food_id: 44,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1695234502934-dca6a45f88cb?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 11,
       menu_name: "Churros",
       rating: 4.6,
@@ -587,7 +627,8 @@ export async function seed(knex) {
     },
     {
       food_id: 45,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1662469843203-b63638ace131?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 11,
       menu_name: "Gazpacho",
       rating: 4.5,
@@ -597,7 +638,8 @@ export async function seed(knex) {
     },
     {
       food_id: 46,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1611489142329-5f62cfa43e6e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 12,
       menu_name: "Peking Duck",
       rating: 4.9,
@@ -607,7 +649,8 @@ export async function seed(knex) {
     },
     {
       food_id: 47,
-      food_url: "",
+      food_url:
+        "https://plus.unsplash.com/premium_photo-1700161711418-014824c357bb?q=80&w=1572&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 12,
       menu_name: "Kung Pao Chicken",
       rating: 4.7,
@@ -617,7 +660,8 @@ export async function seed(knex) {
     },
     {
       food_id: 48,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1695712641569-05eee7b37b6d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 12,
       menu_name: "Spring Rolls",
       rating: 4.6,
@@ -627,7 +671,8 @@ export async function seed(knex) {
     },
     {
       food_id: 49,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1607800910317-b92a6c395a1d?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 13,
       menu_name: "Borscht",
       rating: 4.7,
@@ -637,7 +682,8 @@ export async function seed(knex) {
     },
     {
       food_id: 50,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1547414368-1ae8e2c0ae4f?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8UGVsbWVuaXxlbnwwfHwwfHx8MA%3D%3D",
       cook_id: 13,
       menu_name: "Pelmeni",
       rating: 4.8,
@@ -647,7 +693,8 @@ export async function seed(knex) {
     },
     {
       food_id: 51,
-      food_url: "",
+      food_url:
+        "https://images.unsplash.com/photo-1675540212407-a67ab877c418?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       cook_id: 13,
       menu_name: "Blini",
       rating: 4.6,

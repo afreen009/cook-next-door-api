@@ -38,7 +38,7 @@ function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
 function deg2rad(deg) {
   return deg * (Math.PI / 180);
 }
-
+// http://localhost:8080/cooks/filter?categories=non-veg,halal&lat=22.22&long=77.44&radius=400
 const getFilteredCooks = async (req, res) => {
   try {
     const categories = req.query.categories;
@@ -114,5 +114,11 @@ const getFilteredCooks = async (req, res) => {
 //   res.status(500).json({ error: "Internal Server Error" });
 // }
 // };
+const getAllLocation = async (req, res) => {
+  try {
+    const allLocation = await knex.select("lat", "long").from("cooks");
+    res.json(allLocation);
+  } catch (error) {}
+};
 
-export { getAllCooks, getFilteredCooks };
+export { getAllCooks, getFilteredCooks, getAllLocation };
