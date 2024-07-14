@@ -18,66 +18,28 @@ const getAllCooks = async (_req, res) => {
     res.status(400).send(`Error retrieving list of cooks: ${err}`);
   }
 };
-
-// formula to calculate distance between two points on the Earth
-function getDistanceFromLatLonInKm(lat1, lon1, lat2, lon2) {
-  const R = 6371; // Radius of the Earth in km
-  const dLat = deg2rad(lat2 - lat1);
-  const dLon = deg2rad(lon2 - lon1);
-  const a =
-    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-    Math.cos(deg2rad(lat1)) *
-      Math.cos(deg2rad(lat2)) *
-      Math.sin(dLon / 2) *
-      Math.sin(dLon / 2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  const distance = R * c; // Distance in km
-  return distance;
-}
-
-function deg2rad(deg) {
-  return deg * (Math.PI / 180);
-}
-// http://localhost:8080/cooks/filter?categories=non-veg,halal&lat=22.22&long=77.44&radius=400
-const getFilteredCooks = async (req, res) => {
+const getCooksById = async (req, res) => {
+  const { id } = req.params;
   try {
-    const categories = req.query.categories;
-    const userLat = parseFloat(req.query.lat);
-    const userLong = parseFloat(req.query.long);
-    const radius = parseFloat(req.query.radius);
+    const data = await knex("cooks")
+      .join("menu_items", "menu_items.cook_id", "cooks.id")
+      .select(
+        "menu_items.food_id",
+        "menu_items.food_url",
+        "menu_items.menu_name",
+        "menu_items.rating",
+        "menu_items.price",
+        "menu_items.description"
+      )
+      .where("cooks.id", id);
 
-    if (!categories || isNaN(userLat) || isNaN(userLong) || isNaN(radius)) {
-      return res.status(400).json({
-        error:
-          "Categories, lat, long, and radius are required and must be valid numbers",
-      });
+    if (!data || data.length == 0) {
+      return res.status(404).send(`cook with ID ${id} not found`);
     }
 
-    const categoryArray = categories.split(",");
-
-    // Filter cooks by categories
-    const filteredByCategory = cooks.filter((cook) => {
-      const cookCategories = cook.categories.split(",");
-      return categoryArray.every((category) =>
-        cookCategories.includes(category)
-      );
-    });
-
-    // filter by distance
-    const filteredCooks = filteredByCategory.filter((cook) => {
-      const distance = getDistanceFromLatLonInKm(
-        userLat,
-        userLong,
-        cook.lat,
-        cook.long
-      );
-      return distance <= radius / 1000; // Convert radius to km
-    });
-
-    res.json(filteredCooks);
-  } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: "Internal Server Error" });
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).send(`Error retrieving single cook: ${err}`);
   }
 };
 // {
@@ -121,4 +83,4 @@ const getAllLocation = async (req, res) => {
   } catch (error) {}
 };
 
-export { getAllCooks, getFilteredCooks, getAllLocation };
+export { getAllCooks, getCooksById, getAllLocation };
