@@ -18,30 +18,7 @@ const getAllCooks = async (_req, res) => {
     res.status(400).send(`Error retrieving list of cooks: ${err}`);
   }
 };
-const getCooksById = async (req, res) => {
-  const { id } = req.params;
-  try {
-    const data = await knex("cooks")
-      .join("menu_items", "menu_items.cook_id", "cooks.id")
-      .select(
-        "menu_items.food_id",
-        "menu_items.food_url",
-        "menu_items.menu_name",
-        "menu_items.rating",
-        "menu_items.price",
-        "menu_items.description"
-      )
-      .where("cooks.id", id);
 
-    if (!data || data.length == 0) {
-      return res.status(404).send(`cook with ID ${id} not found`);
-    }
-
-    res.status(200).json(data);
-  } catch (err) {
-    res.status(500).send(`Error retrieving single cook: ${err}`);
-  }
-};
 // {
 // const categories = req.query.categories;
 // const userLat = parseFloat(req.query.lat);
@@ -82,5 +59,29 @@ const getAllLocation = async (req, res) => {
     res.json(allLocation);
   } catch (error) {}
 };
+const getCooksById = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const data = await knex("cooks")
+      .join("menu_items", "menu_items.cook_id", "cooks.id")
+      .select(
+        "menu_items.food_id",
+        "menu_items.food_url",
+        "menu_items.menu_name",
+        "menu_items.rating",
+        "menu_items.price",
+        "menu_items.description"
+      )
+      .where("cooks.id", id);
 
-export { getAllCooks, getCooksById, getAllLocation };
+    if (!data || data.length == 0) {
+      return res.status(404).send(`cook with ID ${id} not found`);
+    }
+
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).send(`Error retrieving single cook: ${err}`);
+  }
+};
+
+export { getAllCooks, getAllLocation, getCooksById };
