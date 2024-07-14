@@ -2,6 +2,7 @@ export function up(knex) {
   return knex.schema.createTable("menu_items", (table) => {
     table.increments("food_id").primary();
     table.integer("cook_id").unsigned().notNullable();
+    table.string("food_url").notNullable();
     table.string("menu_name").notNullable();
     table.decimal("rating", 2, 1).notNullable();
     table.string("price").notNullable();
