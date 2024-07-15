@@ -7,6 +7,7 @@ Cook Next Door is a platform that connects users with neighboring cooks. Users c
 - [Installation](#installation)
 - [Usage](#usage)
 - [Environment Variables](#environment-variables)
+- [Database Migration and Seeding](#database-migration-and-seeding)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -58,11 +59,7 @@ Cook Next Door is a platform that connects users with neighboring cooks. Users c
 
 5. Start the development server
     ```sh
-    npm run dev
-    ```
-    or
-    ```sh
-    yarn dev
+    node index.js
     ```
 
 ## Usage
@@ -79,6 +76,17 @@ The following environment variables are required to run the project:
 - `DB_USER`: The database user, e.g., `root`
 - `DB_PASSWORD`: The database password, e.g., `rootroot`
 - `JWT_KEY`: The secret key for JWT, e.g., `mysecretkey`
+
+## Database Migration and Seeding
+To set up the database, run the following commands:
+- Migrate the database schema:
+    ```sh
+    npx knex migrate:latest
+    ```
+- Seed the database with initial data:
+    ```sh
+    npx knex seed:run
+    ```
 
 ## Contributing
 Contributions are welcome! Please read the [contributing guidelines](CONTRIBUTING.md) for more information.
