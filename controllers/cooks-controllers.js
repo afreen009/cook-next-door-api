@@ -70,7 +70,9 @@ const getCooksById = async (req, res) => {
         "menu_items.menu_name",
         "menu_items.rating",
         "menu_items.price",
-        "menu_items.description"
+        "menu_items.description",
+        "cooks.lat",
+        "cooks.long"
       )
       .where("cooks.id", id);
 
